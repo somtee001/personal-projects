@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+<body class="box-border m-0 p-0 font-['Inter'] text-base text-gray-800 bg-indigo-900 flex justify-center items-center min-h-screen">
+
+    <div id="welcome-overlay" class="fixed inset-0 z-50 flex items-center justify-center bg-indigo-900/80 backdrop-blur-sm">
+    <div class="bg-white rounded-2xl shadow-xl p-10 text-center max-w-sm w-11/12">
+        <span class="text-5xl">👋</span>
+        <h2 class="font-bold text-2xl text-indigo-900 mt-4 mb-2">Welcome!</h2>
+        <p class="text-gray-500 text-sm">Glad you stopped by</p>
+        <div class="mt-6 h-1 bg-gray-100 rounded-full overflow-hidden">
+        <div id="progress-bar" class="h-full bg-indigo-700 rounded-full"></div>
+        </div>
+    </div>
+    </div>
+
+    <div class="w-full flex flex-col text-lg rounded-lg shadow-lg overflow-hidden justify-center items-center gap-3 p-10 md:p-0">
+        <section class="flex flex-col items-center justify-center gap-3 p-8 bg-white w-full md:w-1/3 rounded-2xl md:mt-8">
+            <img class="rounded-full h-1/2 w-1/2 sm:h-44 sm:w-44" src="../Images/photo_2026-05-17_20-33-42.jpg" alt="Profile Photo">
+            <h1 class="font-bold text-2xl md:text-3xl mt-6">Somtochukwu Ndefo</h1>
+            <h3 class="text-base md:text-xl text-gray-600 mb-4 -mt-3">Frontend Dev / Data Analyst</h3>
+            <p class="text-center text-sm md:text-base text-gray-700 mb-6">
+                .HTMl, CSS, JavaScript, Responsive Design,Tailwind CSS, GitHub
+            </p>
+            <div class="flex gap-6 mb-6 justify-evenly items-center">
+                <a href="https://www.instagram.com/dev.somiee?igsh=MXV6OTduM2Iwejh3bg%3D%3D&utm_source=qr" target="_blank"><img class="h-8 w-8" src="../Images/icon.instagram2.jpg" alt="Instagram Link"></a>
+
+                <a href="https://x.com/somieecodes?s=21" target="_blank"><img class="h-8 w-8" src="../Images/icon-x.jpg" alt="Twitter Link"></a>
+
+                <a href="https://www.linkedin.com/in/dev-somiee" target="_blank"><img class="h-8 w-8" src="../Images/icon-linkedln.jpg" alt="LinkedIn Link"></a>
+
+                <a href="https://github.com/somtee001"  target="_blank"><img class="h-8 w-8" src="../Images/icon-github.jpg" alt="Github Link"></a>
+            </div>
+
+            <div class="flex gap-6 mb-6 justify-evenly items-center">
+                <a href="mailto:ndefosomto2@gmail.com">
+                <button class="px-6 py-4 rounded-xl bg-white text-indigo-700 border-indigo-700 border-2 text-sm md:text-xl font-bold hover:bg-indigo-100 transition duration-300"> Message</button></a>
+
+
+                <a href="#"><button class="px-6 py-4 rounded-xl bg-indigo-700 text-white hover:bg-indigo-900 text-sm md:text-xl font-bold border-2 transition duration-300">Connect</button></a>
+            </div>
+        </section>
+
+        <section class="flex gap-6 p-8 bg-white w-full md:w-1/3 rounded-2xl mt-6">
+            <img class="hidden md:block rounded-full h-1/2 w-1/2 sm:h-44 sm:w-44" src="../Images/photo_2026-05-17_20-33-42.jpg" alt="Profile Photo">
+            <div class="flex flex-col gap-4 mt-4">
+                <h1 class="md:text-center md:-mt-4 font-extrabold text-3xl">About</h1>
+                <p class="">
+                Frontend Developer in training, passionate about building clean and responsive web interfaces. Currently learning HTML, CSS, Javascript and modern web development tools.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
